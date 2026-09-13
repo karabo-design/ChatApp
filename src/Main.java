@@ -47,6 +47,24 @@ public class Main {
                         hasRegistered = true;
                     }
                     break;
+
+                case "2":
+                    // Login Option
+                    if (!hasRegistered) {
+                        System.out.println("\nYou need to register a user before you can log in.");
+                        break;
+                    }
+
+                    System.out.println("\n--- LOGIN ---");
+                    System.out.print("Enter Username: ");
+                    String loginUser = scanner.nextLine();
+
+                    System.out.print("Enter Password: ");
+                    String loginPass = scanner.nextLine();
+
+                    boolean isAuthenticated = loginSystem.loginUser(loginUser, loginPass);
+                    System.out.println("\n" + loginSystem.returnLoginStatus(isAuthenticated));
+                    break;
             }
         }
     }
