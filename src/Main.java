@@ -65,7 +65,16 @@ public class Main {
                     boolean isAuthenticated = loginSystem.loginUser(loginUser, loginPass);
                     System.out.println("\n" + loginSystem.returnLoginStatus(isAuthenticated));
                     break;
+                case "3":
+                    // Quit Option
+                    System.out.println("\nExiting the application. Goodbye!");
+                    running = false;
+                    break;
+
+                default:
+                    System.out.println("\nInvalid option. Please enter 1, 2, or 3.");
             }
         }
+        scanner.close();
     }
 }
