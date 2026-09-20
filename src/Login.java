@@ -52,3 +52,19 @@ public class Login {
 
         return "Username successfully captured.\nPassword successfully captured.\nCell number successfully captured.\nUser registered successfully.";
     }
+
+    // 5. Boolean: loginUser()
+    public boolean loginUser(String username, String password) {
+        // Verify entered details match stored details
+        return username.equals(this.storedUsername) && password.equals(this.storedPassword);
+    }
+
+    // 6. String: returnLoginStatus()
+    public String returnLoginStatus(boolean isLoggedIn) {
+        if (isLoggedIn) {
+            return "Welcome " + this.firstName + ", " + this.lastName + " it is great to see you again.";
+        } else {
+            return "Username or password incorrect, please try again.";
+        }
+    }
+}
