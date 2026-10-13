@@ -17,7 +17,7 @@ public class Main {
             System.out.println("3. Quit");
             System.out.print("Please select an option (1-3): ");
 
-            String choice = scanner.nextLine();
+            String choice = scanner.nextLine().trim();
 
             switch (choice) {
                 case "1":
@@ -25,19 +25,19 @@ public class Main {
                     System.out.println("\n--- REGISTRATION ---");
 
                     System.out.print("Enter First Name: ");
-                    String fName = scanner.nextLine();
+                    String fName = scanner.nextLine().trim();
 
                     System.out.print("Enter Last Name: ");
-                    String lName = scanner.nextLine();
+                    String lName = scanner.nextLine().trim();
 
                     System.out.print("Enter Username (must contain '_' and <= 5 chars): ");
-                    String username = scanner.nextLine();
+                    String username = scanner.nextLine().trim();
 
                     System.out.print("Enter Password (>= 8 chars, 1 capital, 1 number, 1 special): ");
-                    String password = scanner.nextLine();
+                    String password = scanner.nextLine().trim();
 
                     System.out.print("Enter Cell Phone Number (with international code, e.g.,+27838968976):");
-                    String cellNumber = scanner.nextLine();
+                    String cellNumber = scanner.nextLine().trim();
 
                     // Call the registration method and print the result
                     String registrationMessage = loginSystem.registerUser(username, password, cellNumber, fName, lName);
@@ -57,10 +57,10 @@ public class Main {
 
                     System.out.println("\n--- LOGIN ---");
                     System.out.print("Enter Username: ");
-                    String loginUser = scanner.nextLine();
+                    String loginUser = scanner.nextLine().trim();
 
                     System.out.print("Enter Password: ");
-                    String loginPass = scanner.nextLine();
+                    String loginPass = scanner.nextLine().trim();
 
                     boolean isAuthenticated = loginSystem.loginUser(loginUser, loginPass);
                     System.out.println("\n" + loginSystem.returnLoginStatus(isAuthenticated));
