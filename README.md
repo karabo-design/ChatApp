@@ -1,28 +1,47 @@
 # Chat Application - Part 1
 
 ## Overview
-This is Part 1 of the Chat Application project, implementing the registration and login feature.
+
+A Java command-line application demonstrating user registration and login. Users can register with a name, username, password, and South African cell phone number, then log in during the current run.
 
 ## Features
-- User registration with username, password, and South African cell phone number validation
-- Username validation: contains underscore, max 5 characters
-- Password complexity validation: min 8 chars, capital letter, number, special character
-- Cell phone validation: international code (+27) format
-- Login functionality with success/failure messages
 
-## Technologies Used
-- Java 11
-- JUnit 5 for unit testing
-- Maven for build automation
-- Git for version control
+- Register a user and validate their username, password, and cell phone number.
+- Log in with the registered username and password and display a personalized status message.
+- Reject login attempts until a user has registered.
 
-## How to Build and Run
+### Registration rules
 
-### Prerequisites
-- Java 11 or higher
-- Maven 3.6 or higher
-- Git
+- **Username:** Must contain an underscore (`_`) and be no more than five characters long. Leading and trailing whitespace is trimmed.
+- **Password:** Must contain at least eight characters, one uppercase letter, one digit, and one special character. Leading and trailing whitespace is trimmed.
+- **Cell phone number:** Must use the `+27` country code followed by exactly nine digits (for example, `+27838968976`).
 
-### Build the Project
+## Requirements
+
+- Java 17 or later
+- Maven 3.6 or later
+
+## Build, test, and run
+
+Run these commands from the project root:
+
 ```bash
-mvn clean compile
+mvn clean package
+mvn test
+java -jar target/chatting-app-1.0-SNAPSHOT.jar
+```
+
+The application presents a menu to register, log in, or quit. Follow the prompts to enter the requested details.
+
+## Project layout
+
+```text
+src/
+  Login.java       Registration validation and login logic
+  Main.java        Command-line menu and user interaction
+tests/
+  java/
+    LoginTest.java Unit tests for registration and login
+```
+
+This is a learning project: registered details are kept in memory and are not saved after the application exits.
