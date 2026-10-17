@@ -71,5 +71,33 @@ public class Message {
             return "Invalid choice.";
         }
     }
+    // 5. String: printMessages()
+    public String printMessages() {
+        return "Message ID: " + messageID + "\n" +
+                "Message Hash: " + messageHash + "\n" +
+                "Recipient: " + recipient + "\n" +
+                "Message: " + messageText;
+    }
 
+    // 6. int: returnTotalMessages()
+    public int returnTotalMessages() {
+        return sentMessagesList.size();
+    }
+
+    // 7. Your own defined storeMessage() method (JSON simulation)
+    public void storeMessage() {
+        storedMessagesList.add(this);
+        System.out.println("\n[Saved to JSON File]:");
+        System.out.println("{");
+        System.out.println("  \"messageID\": \"" + messageID + "\",");
+        System.out.println("  \"recipient\": \"" + recipient + "\",");
+        System.out.println("  \"message\": \"" + messageText + "\"");
+        System.out.println("}");
+    }
+
+    // Getters for unit testing
+    public String getMessageID() { return messageID; }
+    public String getMessageHash() { return messageHash; }
+    public String getRecipient() { return recipient; }
+    public String getMessageText() { return messageText; }
 }
