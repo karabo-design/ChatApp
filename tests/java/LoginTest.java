@@ -2,10 +2,17 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class LoginTest {
     private final Login login = new Login();
+
+    @BeforeEach
+    void resetMessageLists() {
+        Message.sentMessageList.clear();
+        Message.storedMessageList.clear();
+    }
 
     @Test
     void checkUserNameReturnsTrueForValidUsername() {
@@ -54,5 +61,47 @@ class LoginTest {
         login.registerUser("h_1", "Password1!", "+27838968976", "John", "Smith");
 
         assertEquals("Username or password incorrect, please try again.", login.returnLoginStatus(false));
+    }
+
+    @Test
+    void testMessageIDLength() {
+        Message msg = new Message(1, "+27718693002", "Hi Mike, can you join us for dinner tonight?");
+        assertTrue(msg.checkMessageID());
+    }
+
+    @Test
+    void testRecipientCellCorrect() {
+        Message msg = new Message(1, "+27718693002", "Hi Mike...");
+        assertEquals("Cell phone number successfully added.", msg.checkRecipientCell());
+    }
+
+    @Test
+    void testRecipientCellIncorrect() {
+        Message msg = new Message(1, "08575975889", "Hi Keegan...");
+        assertEquals("Cell phone number incorrectly formatted or does not contain international code.", msg.checkRecipientCell());
+    }
+
+    @Test
+    void testMessageHash() {
+        Message msg = new Message(1, "+27718693002", "Hi Mike, can you join us for dinner tonight?");
+        assertTrue(msg.getMessageHash().endsWith(":1:HITONIGHT"));
+    }
+
+    @Test
+    void testSendMessage() {
+        Message msg = new Message(1, "+27718693002", "Test");
+        assertEquals("Message successfully sent.", msg.SentMessage(1));
+    }
+
+    @Test
+    void testDisregardMessage() {
+        Message msg = new Message(1, "+27718693002", "Test");
+        assertEquals("Press 0 to delete the message.", msg.SentMessage(2));
+    }
+
+    @Test
+    void testStoreMessage() {
+        Message msg = new Message(1, "+27718693002", "Test");
+        assertEquals("Message successfully stored.", msg.SentMessage(3));
     }
 }

@@ -1,73 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="LoginTest" time="0.694" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="LoginTest" time="1.257" tests="15" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.specification.version" value="25"/>
+    <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.class.path" value="C:\Users\karab\IdeaProjects\Chatting App\target\test-classes;C:\Users\karab\IdeaProjects\Chatting App\target\classes;C:\Users\karab\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\karab\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\karab\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\karab\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\karab\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\karab\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\karab\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\karab\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
-    <property name="java.vm.vendor" value="JetBrains s.r.o."/>
+    <property name="java.vm.vendor" value="Microsoft"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
-    <property name="java.vendor.url" value="https://www.jetbrains.com/"/>
+    <property name="java.vendor.url" value="https://www.microsoft.com"/>
     <property name="user.timezone" value="Africa/Johannesburg"/>
     <property name="os.name" value="Windows 11"/>
-    <property name="java.vm.specification.version" value="25"/>
+    <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ZA"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2026.2.2\jbr\bin"/>
-    <property name="sun.java.command" value="C:\Users\karab\AppData\Local\Temp\surefire2176548315258975441\surefirebooter-20261012214332716_3.jar C:\Users\karab\AppData\Local\Temp\surefire2176548315258975441 2026-10-12T21-43-31_470-jvmRun1 surefire-20261012214332716_1tmp surefire_0-20261012214332716_2tmp"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Microsoft\jdk-17.0.20.101-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\karab\AppData\Local\Temp\surefire9018598357266772794\surefirebooter-20261018215911560_3.jar C:\Users\karab\AppData\Local\Temp\surefire9018598357266772794 2026-10-18T21-59-10_041-jvmRun1 surefire-20261018215911560_1tmp surefire_0-20261018215911560_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\karab\IdeaProjects\Chatting App\target\test-classes;C:\Users\karab\IdeaProjects\Chatting App\target\classes;C:\Users\karab\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\karab\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\karab\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\karab\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\karab\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\karab\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\karab\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\karab\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\karab"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2026-07-21"/>
-    <property name="java.home" value="C:\Program Files\JetBrains\IntelliJ IDEA 2026.2.2\jbr"/>
+    <property name="java.version.date" value="2026-08-18"/>
+    <property name="java.home" value="C:\Program Files\Microsoft\jdk-17.0.20.101-hotspot"/>
     <property name="file.separator" value="\"/>
     <property name="basedir" value="C:\Users\karab\IdeaProjects\Chatting App"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="intellij.os.virtualization" value="none"/>
-    <property name="jbr.virtualization.information" value="Hyper-V role"/>
-    <property name="surefire.real.class.path" value="C:\Users\karab\AppData\Local\Temp\surefire2176548315258975441\surefirebooter-20261012214332716_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\karab\AppData\Local\Temp\surefire9018598357266772794\surefirebooter-20261018215911560_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="25.0.4+1-b508.27"/>
+    <property name="java.runtime.version" value="17.0.20.1+1-LTS"/>
     <property name="user.name" value="karab"/>
-    <property name="stdout.encoding" value="Cp1252"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="file.encoding" value="UTF-8"/>
+    <property name="file.encoding" value="Cp1252"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="java.vendor.version" value="JBR-25.0.4+1-508.27-nomod"/>
+    <property name="java.vendor.version" value="Microsoft-14940689"/>
     <property name="localRepository" value="C:\Users\karab\.m2\repository"/>
-    <property name="java.vendor.url.bug" value="https://youtrack.jetbrains.com/issues/JBR"/>
+    <property name="java.vendor.url.bug" value="https://github.com/microsoft/openjdk/issues"/>
     <property name="java.io.tmpdir" value="C:\Users\karab\AppData\Local\Temp\"/>
-    <property name="java.version" value="25.0.4"/>
+    <property name="java.version" value="17.0.20.1"/>
     <property name="user.dir" value="C:\Users\karab\IdeaProjects\Chatting App"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2026.2.2\jbr\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\JetBrains\IntelliJ IDEA 2026.2.2\jbr\bin;C:\Users\karab\AppData\Local\JetBrains\IntelliJIdea2026.2\acp-agents\.runtimes\node\24.13.0\npm-cache\_npx\ffc285342cad15b4\node_modules\.bin;C:\Users\karab\AppData\Local\JetBrains\IntelliJIdea2026.2\acp-agents\github-copilot\1.552.0\node_modules\.bin;C:\Users\karab\AppData\Local\JetBrains\IntelliJIdea2026.2\acp-agents\github-copilot\node_modules\.bin;C:\Users\karab\AppData\Local\JetBrains\IntelliJIdea2026.2\acp-agents\node_modules\.bin;C:\Users\karab\AppData\Local\JetBrains\IntelliJIdea2026.2\node_modules\.bin;C:\Users\karab\AppData\Local\JetBrains\node_modules\.bin;C:\Users\karab\AppData\Local\node_modules\.bin;C:\Users\karab\AppData\node_modules\.bin;C:\Users\karab\node_modules\.bin;C:\Users\node_modules\.bin;C:\node_modules\.bin;C:\Users\karab\AppData\Local\JetBrains\IntelliJIdea2026.2\acp-agents\.runtimes\node\24.13.0\node_modules\npm\node_modules\@npmcli\run-script\lib\node-gyp-bin;C:\Users\karab\AppData\Local\JetBrains\IntelliJIdea2026.2\acp-agents\github-copilot\1.552.0\node_modules\.bin;C:\Users\karab\AppData\Local\JetBrains\IntelliJIdea2026.2\acp-agents\github-copilot\node_modules\.bin;C:\Users\karab\AppData\Local\JetBrains\IntelliJIdea2026.2\acp-agents\node_modules\.bin;C:\Users\karab\AppData\Local\JetBrains\IntelliJIdea2026.2\node_modules\.bin;C:\Users\karab\AppData\Local\JetBrains\node_modules\.bin;C:\Users\karab\AppData\Local\node_modules\.bin;C:\Users\karab\AppData\node_modules\.bin;C:\Users\karab\node_modules\.bin;C:\Users\node_modules\.bin;C:\node_modules\.bin;C:\Users\karab\AppData\Local\JetBrains\IntelliJIdea2026.2\acp-agents\.runtimes\node\24.13.0\node_modules\npm\node_modules\@npmcli\run-script\lib\node-gyp-bin;C:\Users\karab\AppData\Local\JetBrains\IntelliJIdea2026.2\acp-agents\.runtimes\node\24.13.0;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\karab\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\karab\AppData\Local\Programs\Python\Python313\;C:\Users\karab\AppData\Local\Microsoft\WindowsApps;C:\Users\karab\AppData\Local\Programs\Microsoft VS Code\bin;;."/>
+    <property name="java.library.path" value="C:\Program Files\Microsoft\jdk-17.0.20.101-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\karab\AppData\Local\JetBrains\IntelliJIdea2026.2\acp-agents\github-copilot\1.554.0\node_modules\.bin;C:\Users\karab\AppData\Local\JetBrains\IntelliJIdea2026.2\acp-agents\github-copilot\node_modules\.bin;C:\Users\karab\AppData\Local\JetBrains\IntelliJIdea2026.2\acp-agents\node_modules\.bin;C:\Users\karab\AppData\Local\JetBrains\IntelliJIdea2026.2\node_modules\.bin;C:\Users\karab\AppData\Local\JetBrains\node_modules\.bin;C:\Users\karab\AppData\Local\node_modules\.bin;C:\Users\karab\AppData\node_modules\.bin;C:\Users\karab\node_modules\.bin;C:\Users\node_modules\.bin;C:\node_modules\.bin;C:\Users\karab\AppData\Local\JetBrains\IntelliJIdea2026.2\acp-agents\.runtimes\node\24.19.0\node_modules\npm\node_modules\@npmcli\run-script\lib\node-gyp-bin;C:\Users\karab\AppData\Local\JetBrains\IntelliJIdea2026.2\acp-agents\.runtimes\node\24.19.0;C:\Program Files\Microsoft\jdk-17.0.20.101-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\karab\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\karab\AppData\Local\Programs\Python\Python313\;C:\Users\karab\AppData\Local\Microsoft\WindowsApps;C:\Users\karab\AppData\Local\Programs\Microsoft VS Code\bin;;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="stderr.encoding" value="Cp1252"/>
-    <property name="java.vendor" value="JetBrains s.r.o."/>
-    <property name="java.vm.version" value="25.0.4+1-b508.27"/>
-    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Microsoft"/>
+    <property name="java.vm.version" value="17.0.20.1+1-LTS"/>
+    <property name="java.specification.maintenance.version" value="1"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="69.0"/>
+    <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="checkPasswordComplexityReturnsFalseForInvalidPassword" classname="LoginTest" time="0.26"/>
+  <testcase name="checkPasswordComplexityReturnsFalseForInvalidPassword" classname="LoginTest" time="0.324"/>
+  <testcase name="testMessageHash" classname="LoginTest" time="0.17"/>
+  <testcase name="testStoreMessage" classname="LoginTest" time="0.097">
+    <system-out><![CDATA[
+[Saved to JSON File]:
+{
+  "messageID": "2753366038",
+  "recipient": "+27718693002",
+  "message": "Test"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testRecipientCellCorrect" classname="LoginTest" time="0.051"/>
+  <testcase name="testSendMessage" classname="LoginTest" time="0.004"/>
   <testcase name="checkCellPhoneNumberReturnsTrueForSouthAfricanNumber" classname="LoginTest" time="0.01"/>
-  <testcase name="checkPasswordComplexityReturnsTrueForValidPassword" classname="LoginTest" time="0.01"/>
-  <testcase name="checkUserNameReturnsTrueForValidUsername" classname="LoginTest" time="0.003"/>
-  <testcase name="registerUserStoresDetailsAndReturnsSuccessMessage" classname="LoginTest" time="0.006"/>
-  <testcase name="checkUserNameReturnsFalseForInvalidUsername" classname="LoginTest" time="0.009"/>
-  <testcase name="returnLoginStatusReturnsWelcomeMessageForSuccessfulLogin" classname="LoginTest" time="0.028"/>
-  <testcase name="returnLoginStatusReturnsErrorMessageForFailedLogin" classname="LoginTest" time="0.012"/>
+  <testcase name="checkPasswordComplexityReturnsTrueForValidPassword" classname="LoginTest" time="0.021"/>
+  <testcase name="checkUserNameReturnsTrueForValidUsername" classname="LoginTest" time="0.017"/>
+  <testcase name="testDisregardMessage" classname="LoginTest" time="0.02"/>
+  <testcase name="registerUserStoresDetailsAndReturnsSuccessMessage" classname="LoginTest" time="0.011"/>
+  <testcase name="checkUserNameReturnsFalseForInvalidUsername" classname="LoginTest" time="0.008"/>
+  <testcase name="testRecipientCellIncorrect" classname="LoginTest" time="0.015"/>
+  <testcase name="testMessageIDLength" classname="LoginTest" time="0.009"/>
+  <testcase name="returnLoginStatusReturnsWelcomeMessageForSuccessfulLogin" classname="LoginTest" time="0.055"/>
+  <testcase name="returnLoginStatusReturnsErrorMessageForFailedLogin" classname="LoginTest" time="0.006"/>
 </testsuite>
