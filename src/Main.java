@@ -157,3 +157,33 @@ String response = msg.SentMessage(action);
 Message tracker = new Message(0, "", "");
                                     System.out.println("\nTotal messages sent: " + tracker.returnTotalMessages());
         break;
+
+        case "2":
+        System.out.println("Coming Soon.");
+                                    break;
+
+                                            case "3":
+                                            System.out.println("Exiting QuickChat...");
+chatRunning = false;
+        break;
+
+default:
+        System.out.println("Invalid choice. Please enter 1, 2, or 3.");
+                            }
+                                    }
+                                    }
+                                    break;
+
+                                    case "3":
+                                    // Quit Option
+                                    System.out.println("\nExiting the application. Goodbye!");
+running = false;
+        break;
+
+default:
+        System.out.println("\nInvalid option. Please enter 1, 2, or 3.");
+            }
+                    }
+                    scanner.close();
+    }
+            }
