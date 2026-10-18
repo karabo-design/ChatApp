@@ -92,3 +92,68 @@ boolean chatRunning = true;
                             System.out.println("Option 3) Quit");
                             System.out.print("Choose an option: ");
 String menuChoice = scanner.nextLine().trim();
+
+ switch (menuChoice) {
+        case "1":
+        System.out.print("How many messages do you wish to enter? ");
+int numMessages = 0;
+                                    try {
+numMessages = Integer.parseInt(scanner.nextLine().trim());
+        } catch (NumberFormatException e) {
+        System.out.println("Invalid number.");
+                                        break;
+                                                }
+
+                                                for (int i = 1; i <= numMessages; i++) {
+        System.out.println("\n--- Message " + i + " ---");
+
+                                        System.out.print("Enter recipient number (+27...): ");
+String recipient = scanner.nextLine().trim();
+
+String messageText = "";
+                                        while (true) {
+                                                System.out.print("Enter message (max 250 chars): ");
+messageText = scanner.nextLine().trim();
+                                            if (messageText.length() <= 250) {
+        System.out.println("Message sent");
+                                                break;
+                                                        } else {
+                                                        System.out.println("Please enter a message of less than 250 characters.");
+                                            }
+                                                    }
+
+// Create message object
+Message msg = new Message(i, recipient, messageText);
+
+// Validate cell
+                                        System.out.println(msg.checkRecipientCell());
+
+        // Ask to send/store/discard
+        System.out.println("1 - Send Message");
+                                        System.out.println("2 - Disregard Message");
+                                        System.out.println("3 - Store Message");
+                                        System.out.print("Choice: ");
+
+int action = 0;
+                                        try {
+action = Integer.parseInt(scanner.nextLine().trim());
+        } catch (NumberFormatException e) {
+        System.out.println("Invalid input.");
+                                            continue;
+                                                    }
+
+// Process Action
+String response = msg.SentMessage(action);
+                                        System.out.println(">> " + response);
+
+// Display details if sent
+                                        if (action == 1) {
+        System.out.println("\n--- Details ---");
+                                            System.out.println(msg.printMessages());
+        }
+        }
+
+// Show total
+Message tracker = new Message(0, "", "");
+                                    System.out.println("\nTotal messages sent: " + tracker.returnTotalMessages());
+        break;
