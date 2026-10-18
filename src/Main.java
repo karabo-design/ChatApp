@@ -78,3 +78,17 @@ public class Main {
         scanner.close();
     }
 }
+
+//Part 2
+
+ if (isAuthenticated) {
+        System.out.println("\nWelcome to QuickChat.");
+boolean chatRunning = true;
+
+                        while (chatRunning) {
+        System.out.println("\n--- QUICKCHAT MENU ---");
+                            System.out.println("Option 1) Send Messages");
+                            System.out.println("Option 2) Show recently sent messages");
+                            System.out.println("Option 3) Quit");
+                            System.out.print("Choose an option: ");
+String menuChoice = scanner.nextLine().trim();
